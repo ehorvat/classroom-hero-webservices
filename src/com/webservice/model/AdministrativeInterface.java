@@ -1,0 +1,47 @@
+package com.webservice.model;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+
+
+/////////////////////////////////////////////////////////////
+//
+// An interface containing methods for both teachers and
+// admins
+//
+/////////////////////////////////////////////////////////////
+
+public interface AdministrativeInterface {
+	
+	
+	////////////////////////////////////////////////////
+	//
+	// Methods for initializing 
+	// 
+	////////////////////////////////////////////////////
+	
+	JSONArray initProfile() throws SQLException, JSONException;
+	
+	/////////////////////////////////////////////////////
+	
+	////////////////////////////////////////////////////
+	//
+	// Methods for retrieving currently saved entities 
+	// 
+	////////////////////////////////////////////////////
+	
+	JSONArray getStudents() throws SQLException, JSONException;
+	
+	JSONArray getItems() throws SQLException, JSONException;
+	
+	JSONArray getCategories() throws SQLException, JSONException;
+
+	
+	
+	/////////////////////////////////////////////////////
+	
+}

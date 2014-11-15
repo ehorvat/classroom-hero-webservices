@@ -1,0 +1,31 @@
+package com.webservice.model;
+
+import java.sql.SQLException;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+
+/////////////////////////////////////////////////////////////
+//
+// An interface containing all methods for a teacher's 
+// profile.
+//
+/////////////////////////////////////////////////////////////
+
+public interface TeacherInterface {
+	
+	
+	/////////////////
+	//
+	// Getters
+	// 
+	/////////////////
+
+	JSONObject getClassJar() throws SQLException, JSONException;
+	
+	
+
+	////////////////////////////////////////////////////////
+
+}
